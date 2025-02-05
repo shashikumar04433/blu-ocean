@@ -41,7 +41,7 @@ pipeline {
             steps {
                 echo "Pushing Docker image to Registry"
                 script {
-                    sh 'docker login --username="shashikumar023" --password="Anand987@123" ${dockerRegistry}'
+                    sh 'docker login --username="shashikumar023" --password="Shashi987@123" ${dockerRegistry}'
 					dockerImage.push()
                     }
             }
