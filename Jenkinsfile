@@ -1,5 +1,5 @@
 #!/groovy
-def dockerImageRepo = 'gatewaytech/gatewaytech-ui'
+def dockerImageRepo = 'shashikumar023/blueocean'
 def dockerImageTag
 def dockerImage
 def dockerRegistry = 'hub.docker.com'
@@ -56,7 +56,7 @@ pipeline
 				echo "Pushing Docker image to Registory"
 				script
 				{
-					sh 'docker login --username="anandgit71" --password="anandgit12" ${dockerRegistry}'
+					sh 'docker login --username="shashikumar023" --password="Anand987@123" ${dockerRegistry}'
 					dockerImage.push()
 					// sh 'docker rmi $(docker images -a -q)'
 					// sh 'docker images'
